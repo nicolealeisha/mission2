@@ -1,0 +1,299 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("https://img.freepik.com/free-vector/geometric-pattern-background-vector-white_53876-126684.jpg?semt=ais_hybrid");
+    background-repeat: repeat;
+    background-position: center;
+    display: flex;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+/* navigation */
+
+nav > ul {
+    position: fixed;
+    display: flex;
+    justify-content: flex-start;
+    overflow: auto;
+    height: 40px;
+    margin: 0px -50px;
+    background-color: #3e9504;
+    width: 100rem;
+    z-index: 1;
+}
+
+.btn {
+    background-color: #3e9504;
+    opacity: 0.9;
+    font-size: 16px;
+    text-align: center;
+    width: 100px;
+    color: rgba(0,0,0);
+    border-right: solid 2px #2a6503;
+}
+
+.nav-link{
+    list-style: none;
+    padding: 10px 10px;
+    width: 150px;
+}
+
+.nav-link a{
+    display: block;
+    color:black;
+    text-decoration: none;
+}
+
+.btn:hover {
+    cursor: pointer;
+    color: white;
+    background-color: #2a6503;
+    transition: opacity 0.3s ease-in;
+    opacity: 1;
+}
+
+/*header & intro*/
+
+#intro{
+    display: flex;
+    height: 20rem;
+    padding: 75px 5% 20px;
+}
+
+.header-img{
+    border-radius: 50%; 
+    width: 200px;
+    height: 200px;
+    align-items: flex-start;
+}
+
+#intro-info{
+    width: 100%;
+    align-items: flex-end;
+    padding-left: 100px;
+    padding-top: -100px;
+    
+}
+
+#intro-info h1{
+    font-size: 35px;
+    margin: 10px 0px;
+}
+
+#intro-info a{
+    text-decoration: none;
+    color: forestgreen;
+    padding: 5px 10px 15px 0px;
+}
+
+#intro-info a:hover{
+    color: grey;
+}
+
+/*experience block*/
+
+#experience{
+    height: auto;
+    width: auto;
+    margin: 20px 20px;
+    /*background-image: url("https://images.pexels.com/photos/163074/purse-wallet-coffee-pen-163074.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-repeat: repeat;
+    background-position: bottom right;
+    background-size: cover;*/
+}
+
+#experience h1{
+    background-color: grey;
+    border-top: black solid 2px;
+    border-bottom: black solid 2px;
+    padding: 25px;
+    margin: 0px -25px;
+    width: 125%;
+}
+
+#experience-imgs{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    max-width: 300px;
+    max-height: auto;
+    border-radius: 8px;    
+    margin: 20px 30px 20px 0px;
+    background-color: white;
+    box-shadow: 0 0 2px 2px rgba(81, 91, 74, 0.5);
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    justify-content: center;
+}
+
+.card p{
+    font-size: 18px;
+    margin: 5px 15px 10px;
+}
+
+#img{
+    border-radius: 8px; 
+    max-height: 300px;
+    overflow: hidden;
+    max-width: 300px;
+    object-fit: scale-down;
+}
+
+.card:hover{
+    -webkit-filter: grayscale(100%);
+    transition: all 0.2s ease;
+}
+
+.card h3{
+    margin: 15px 15px;
+    color: forestgreen;
+    text-decoration: none;
+    font-weight: 200;
+    font-size: 20px;
+}
+
+/*contact form*/
+
+#contact{
+    padding-top: 20px;
+}
+
+fieldset{
+    margin: 10px 10% 50px;
+    padding: -15px 10px;
+    border-radius: 5px;
+    border: 2px solid #3e9504;
+    background-color: white;
+}
+
+
+input[type=text], input[type=email]{
+    padding: 5px 20px 0px 0px;
+    margin: 0px 5px;
+    border: none;
+    border-bottom: 2px solid;
+}
+
+
+input[type=submit]{
+    background-color: rgb(90, 88, 90);
+    color: white;
+    width: 20%;
+    padding: 5px 5px;
+    margin: 8px;
+    border-radius: 5px;
+}
+
+input[type=submit]:hover{
+    cursor: pointer;
+    background-color: forestgreen;
+}
+
+textarea{
+    padding: 2px 2px;
+    margin: 8px 2px;
+}
+
+legend{
+    padding: 10px 10px;
+    margin: -15px 0px;
+}
+
+#left, #left-2{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 15px;
+    padding-bottom: 20px;
+}
+
+#right{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin-top: -105px;
+    padding-right: 20px;
+}
+
+#right-2{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: -0px;
+}
+
+#project h1{
+    padding: 100px 20px;
+}
+
+footer{
+    background-color: grey;
+    padding: 15px;
+    text-align: center;
+    border-top: black solid 2px;
+    width: 125%;
+}
+
+
+/*code for when screens are small*/
+@media only screen and (max-width: 750px) {
+    .header-img{
+        display: none;
+    }
+
+    #intro-info{
+        padding: 0px;
+        padding-bottom: 200px;
+    }
+
+    #intro{
+        height: 280px;
+    }
+
+    #experience-imgs#left,#left2,#right,#right2{
+        flex-direction: column;
+        align-items: center;
+        margin: 0px;
+    }
+    
+    #experience{
+        height: auto;
+    }
+
+    .nav-link{
+        width: 100px;
+        font-size: 15px;
+    } 
+}
+
+
+/*
+Mobile layout
+
+@media only screen and (max-width: 300px) {
+    
+
+
+    .nav-link, nav > ul, .btn{
+        height: auto;
+        width: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: -10px;
+        justify-content: center;
+        border: none;
+    }
+
+    #intro{
+        padding: 200px 10px 10px;
+        height: 500px;
+    }
+
+}
+    */

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nicole's Portfolio</title>
+        <link rel="stylesheet"
+             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+         <link href="style.css" rel="stylesheet" />
+     
+    <script defer src="script.js"></script> 
+    </head>
+
+     <body>
+        <nav>
+            <ul>
+                <li class="btn nav-link responsive-menu">
+                    <a href="index.html">Home</a></li>
+                <li class="btn nav-link responsive-menu">
+                    <a href="#intro">About Me</a></li>
+                <li class="btn nav-link responsive-menu">
+                    <a href="#experience">Experience</a></li>
+                <li class="btn nav-link responsive-menu">
+                    <a href="#contact">Contact</a></li>
+                <li class="btn nav-link responsive-menu" id="dark-mode">
+                        Dark Mode</li>
+            </ul>
+        </nav>
+    <main>
+        <section id="intro">   
+                <img class="header-img" src="profile-img.png" alt="Nicole Smith" width="200"> 
+            <div id ="intro-info">   
+                <h1 id="title">Nicole Smith</h1>
+                <h2>A passionate people person, with a background in technology.</h2>
+                <p><a href="https://www.facebook.com/nicolealeisha"><i class="fa-brands fa-square-facebook fa-2x"></i></a>
+                <a href="https://www.linkedin.com/in/nicolealeisha/"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+                <a href="https://github.com/nicolealeisha"><i class="fa-brands fa-github fa-2x"></i></a></p>   
+            </div>
+        </section>
+
+        <section id="experience">
+                <h1 id="experience-h1">Experience</h1>
+                <p>Nicole is currently leveling up on the Full Stack Engineering course at Mission Ready 🚀<br><br>    
+                She has experience in basic front end development, as well as user experience design, and computer networking. 
+                <br>View portfolio projects by clicking on the images below.</p>
+                <section id="experience-imgs">
+                    <!--Example Project 1-->
+                    <div class="card"> 
+                        <div id ="img"><a href="project.html" id="img1"><img src="app-project.png"></a></div>
+                        <h3 id="caption1">Example 1</h3>
+                        <p>Nicole designed all elements of a mobile app during her university degree, pictured above.</p>
+                    </div>
+                    <!--Example Project 2-->
+                    <div class="card">
+                        <div id ="img"><a href="project.html" id="img2"><img src="website-project.png"></a></div>
+                        <h3 id="caption2">Example 2</h3>
+                        <p>Nicole led a purpose build website redesign for a primary school.</p>
+                    </div>
+                    <!--Example Project 3-->
+                    <div class="card">
+                        <div id ="img"><a href="project.html" id="img3"><img src="website-project1.png"></a></div>
+                        <h3 id="caption3">Example 3</h3>
+                        <p>Nicole designed the layout and imagery for a website project, pictured above. </p>
+                    </div>
+                </section>
+        </section>
+
+        <section id="contact">
+            <fieldset id="contact-form">
+                <legend><h1>Contact Nicole</h1></legend>
+                <form action="mailto:nicolealeisha@gmail.com" method="post"> <!--post method appends form data inside HTTP request-->
+                <div id="left">
+                    <label>Name:</label><input type="text" name="name" required><br>
+                </div>
+                <div id="left-2">
+                    <label>Email:</label><input type="email" name="email" required><br>
+                </div>
+                <div id="right">
+                    <label>Message:<br></label><textarea name="message" rows="5" cols="30"></textarea><br>
+                </div> 
+                    <div id="right-2">   
+                    <input type="submit" value="Submit">
+                </div>
+                
+                </form>
+            </fieldset>
+        </section>
+
+        <footer>
+            Copyright Nicole Smith 2024.
+        </footer>
+    </main>
+     </body>
+
+</html>
