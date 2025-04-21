@@ -1,5 +1,5 @@
-Mission 2 Details: 
-Show and demonstrate an understanding of JavaScript language by including the following JavaScript on your page: 
+# Mission 2 Details: 
+The purpose of this project was to show and demonstrate an understanding of JavaScript language by including the following: 
 
 JavaScript 
 1. Declare variables using let or const 
